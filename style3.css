@@ -1,0 +1,50 @@
+/* 1. Hər şey üçün box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* 2. Body ümumi stil */
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* 3. Səhifə qutusu */
+.page {
+  width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* 4. Container qutular üçün */
+.container {
+  display: flex;
+  justify-content: center; /* yatay ortala */
+  align-items: center;     /* şaquli ortala */
+  gap: 20px;               /* qutular arası məsafə */
+  margin: 20px 0;
+  height: 100px;
+}
+
+/* 5. Hər bir box */
+.box {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border: 5px solid red;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 6. Note */
+.note {
+  margin-top: 30px;
+  text-align: left;
+  color: #333;
+}
