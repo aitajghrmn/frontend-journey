@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<form class="form">
+    <h2>Qeydiyyat Formu</h2>
+
+    <!-- Ad -->
+    <label for="name">Adınız:</label>
+    <input type="text" id="name" name="name" placeholder="Adınızı yazın" required>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+    <!-- Radio buttons -->
+    <fieldset>
+        <legend>Ödəniş növü</legend>
+
+        <label>
+            <input type="radio" name="payment" value="card" required>
+            Kart
+        </label>
+
+        <label>
+            <input type="radio" name="payment" value="cash">
+            Nağd
+        </label>
+
+        <label>
+            <input type="radio" name="payment" value="transfer">
+            Köçürmə
+        </label>
+    </fieldset>
+
+    <!-- Checkbox -->
+    <fieldset>
+        <legend>Maraqlarınız</legend>
+
+        <label>
+            <input type="checkbox" name="interest" value="frontend">
+            Frontend
+        </label>
+
+        <label>
+            <input type="checkbox" name="interest" value="backend">
+            Backend
+        </label>
+
+        <label>
+            <input type="checkbox" name="interest" value="ai">
+            AI
+        </label>
+    </fieldset>
+
+    <!-- Checkbox (agreement) -->
+    <label class="agreement">
+        <input type="checkbox" required>
+        Şərtləri oxudum və qəbul edirəm
+    </label>
+
+    <button type="submit">Göndər</button>
+</form>
+
+</body>
+</html>
