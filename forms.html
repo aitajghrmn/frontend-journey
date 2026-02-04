@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form action="gonder" method="POST">
+        <fieldset>
+            <legend>Telebe formu</legend>
+
+            <label for="ad">Adiniz</label>
+            <input type="text" id="ad" name="first_name" placeholder="Aitaj" required>
+            <br><br>
+
+            <label for="soyad">Soyadiniz</label>
+            <input type="text" id="soyad" name="surname" placeholder="Gahraman" required>
+            <br><br>
+
+            <label for="studentnumber">Telebe nomreniz:</label>
+            <input type="number" id="studentnumber" name="st_number" placeholder="1223456789" required>
+            <br><br>
+
+            <label>
+             <label for="ixtisas">Ixtisasinizi secin:</label>
+             <select id="ixtisas" name="ixtisas">
+                <option value="cs">Computer Science</option>
+                <option value="ce">Computer Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="is">Information Security</option>
+            </select>
+            <br><br>
+
+            
+
+            <label for="davamiyyet">Davamiyyet:</label>
+
+            <input type="radio" id="davamiyyet" value="Ela">
+            <label for="Ela"> 0-25% </label>
+
+            <input type="radio" id="davamiyyet" value="yaxsi">
+            <label for="yaxsi">25-50%</label>
+
+            <input type="radio" id="davamiyyet" value="pis">
+            <label for="pis">50-75%</label>
+
+            <input type="radio" id="davamiyyet" value="cox pis">
+            <label for="cox pis">75-100%</label>
+            <br><br>
+
+            <label for="Sobe">Sobe:</label>
+            <select id="sobe" name="sobe">
+                <option>A qrupu</option>
+                <option>B qrupu</option>
+            </select>
+            <br><br>
+
+            <label for="qeyd">Qeyd:</label><br>
+            <textarea id="qeyd" name="note" rows="5"></textarea>
+            <br>
+
+            <button type="submit">Saxla</button>
+            <button type="reset">Temizle</button>
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>
